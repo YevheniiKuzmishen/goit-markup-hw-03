@@ -61,16 +61,6 @@ img {
   border-bottom: 1px solid #e7e9fc;
 }
 
-.visually-hidden {
-  margin: -1px;
-  border: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  overflow: hidden;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-}
-
 .header-logo {
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
@@ -134,7 +124,9 @@ img {
 
 .hero {
   background-color: #2e2f42;
-  padding: 188px 472px 292px 472px;
+  padding: 188px 0;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .hero-container {
@@ -148,7 +140,7 @@ img {
   line-height: 1.07;
   letter-spacing: 0.02em;
   margin-bottom: 48px;
-  max-width: 496;
+  min-width: 496px;
 }
 
 .hero-btn {
@@ -167,6 +159,9 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  min-width: 169px;
+  height: 56px;
+  border: none;
 }
 
 .hero-btn:hover,
@@ -179,13 +174,23 @@ img {
   padding-bottom: 120px;
 }
 
+.visually-hidden {
+  margin: -1px;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  overflow: hidden;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
 .princeples-list {
   display: flex;
   gap: 24px;
 }
 
 .princeples-item {
-  width: calc((100% - 24 * 3) / 4);
+  width: calc((100% - 72px) / 4);
 }
 
 .princeples-subtitle {
@@ -225,18 +230,17 @@ img {
 .people-team-list {
   display: flex;
   gap: 24px;
-  width: calc((100% - 24 * 3) / 4);
 }
 
 .team-list {
+  width: calc((100% - 72px) / 4);
   background-color: #ffffff;
-  padding-bottom: 32px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
 }
 
-.people-img {
-  margin-bottom: 32px;
+.about-people {
+  padding: 32px 0;
 }
 
 .people-name {
@@ -281,14 +285,16 @@ img {
 }
 
 .portfolio-item {
-  width: calc((100% - 24 * 2) / 3);
-  border-bottom: 1px solid #e7e9fc;
+  width: calc((100% - 48px) / 3);
 }
 
 .portfolio-img {
-  margin-bottom: 32px;
 }
-
+.about-samples {
+  padding: 32px 16px;
+  border-bottom: 1px solid #e7e9fc;
+  border-top: none;
+}
 .samples-name {
   color: #2e2f42;
   font-size: 20px;
@@ -296,8 +302,6 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
-  padding-left: 16px;
-  padding-right: 16px;
 }
 
 .direction {
@@ -306,15 +310,12 @@ img {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-bottom: 32px;
 }
 
 .basement {
   min-width: 1158px;
   background: #2e2f42;
-  padding: 100px 1169px 188px 156px;
+  padding: 100px 0;
 }
 
 .basement-logo {
@@ -325,6 +326,8 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .basement-logo-cloud {
@@ -340,4 +343,5 @@ img {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  max-width: 264px;
 }
