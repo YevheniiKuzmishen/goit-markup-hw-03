@@ -139,8 +139,8 @@ img {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  max-width: 496px;
   margin-bottom: 48px;
-  min-width: 496px;
 }
 
 .hero-btn {
@@ -178,7 +178,7 @@ img {
   margin: -1px;
   border: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+  clip-path: inset (100%);
   overflow: hidden;
   line-height: 1.2;
   letter-spacing: 0.02em;
